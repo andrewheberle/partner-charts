@@ -5,6 +5,35 @@ entries:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/release-name: artifactory-ha
     apiVersion: v1
+    appVersion: 7.12.6
+    created: "2021-02-26T18:55:48.762534939Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.3.4
+    description: Universal Repository Manager supporting all major packaging formats, build tools and CI servers.
+    digest: 6f13240e67c292e0a7229b1e0b1d8389991e10850d629fab7bac34b7f702fa3c
+    home: https://www.jfrog.com/artifactory/
+    icon: https://raw.githubusercontent.com/jfrog/charts/master/stable/artifactory-ha/logo/artifactory-logo.png
+    keywords:
+    - artifactory
+    - jfrog
+    - devops
+    maintainers:
+    - email: installers@jfrog.com
+      name: Chart Maintainers at JFrog
+    name: artifactory-ha
+    sources:
+    - https://bintray.com/jfrog/product/JFrog-Artifactory-Pro/view
+    - https://github.com/jfrog/charts
+    urls:
+    - assets/artifactory-ha/artifactory-ha-4.7.600.tgz
+    version: 4.7.600
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/release-name: artifactory-ha
+    apiVersion: v1
     appVersion: 7.6.3
     created: "2020-10-19T19:35:34.216778028Z"
     dependencies:
@@ -39,6 +68,36 @@ entries:
     - assets/artifactory-ha/artifactory-ha-3.0.1400.tgz
     version: 3.0.1400
   artifactory-jcr:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/release-name: artifactory-jcr
+    apiVersion: v1
+    appVersion: 7.12.5
+    created: "2021-02-26T18:58:09.545552572Z"
+    dependencies:
+    - name: artifactory
+      repository: https://charts.jfrog.io/
+      version: 11.7.4
+    description: JFrog Container Registry
+    digest: 148af8042991b7d031770887a8d64e034268c2e1e3eb03f55e13310a40cb2a60
+    home: https://jfrog.com/container-registry/
+    icon: https://raw.githubusercontent.com/jfrog/charts/master/stable/artifactory-jcr/logo/jcr-logo.png
+    keywords:
+    - artifactory
+    - jfrog
+    - container
+    - registry
+    - devops
+    - jfrog-container-registry
+    maintainers:
+    - email: helm@jfrog.com
+      name: Chart Maintainers at JFrog
+    name: artifactory-jcr
+    sources:
+    - https://github.com/jfrog/charts
+    urls:
+    - assets/artifactory-jcr/artifactory-jcr-3.4.000.tgz
+    version: 3.4.000
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/release-name: artifactory-jcr
@@ -146,6 +205,53 @@ entries:
     urls:
     - assets/citrix-k8s-cpx-ingress-controller/citrix-k8s-cpx-ingress-controller-1.8.2800.tgz
     version: 1.8.2800
+  cloudcasa:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/namespace: cloudcasa-io
+      catalog.cattle.io/release-name: cloudcasa
+    apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-04-13T23:59:35.41596176Z"
+    description: CloudCasa backup service for Kubernetes and cloud native applications
+    digest: 014dcf27bd1589e86e3401fadc3ebbb77a339eb8a791b5286f196aa828e5ffb3
+    home: https://cloudcasa.io
+    icon: https://partner-charts.rancher.io/assets/logos/cloudcasa.png
+    keywords:
+    - backup
+    - Catalogic
+    - CloudCasa
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: info@catalogicsoftware.com
+      name: catalogicsoftware
+    name: cloudcasa
+    urls:
+    - assets/cloudcasa/cloudcasa-1.tgz
+    version: "1"
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/namespace: cloudcasa-io
+      catalog.cattle.io/release-name: cloudcasa
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-03-09T00:13:50.362055098Z"
+    description: CloudCasa backup service for Kubernetes and cloud native applications
+    digest: be87ab1b0e0e9c74998d5d3e5041f75ac732174389ee3bf68a3d8016aace786f
+    home: https://cloudcasa.io
+    icon: https://partner-charts.rancher.io/assets/logos/cloudcasa.png
+    keywords:
+    - backup
+    - Catalogic
+    - CloudCasa
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: info@catalogicsoftware.com
+      name: catalogicsoftware
+    name: cloudcasa
+    urls:
+    - assets/cloudcasa/cloudcasa-0.1.000.tgz
+    version: 0.1.000
   cockroachdb:
   - annotations:
       catalog.cattle.io/certified: partner
@@ -278,6 +384,33 @@ entries:
     - assets/dynatrace-oneagent-operator/dynatrace-oneagent-operator-0.8.000.tgz
     version: 0.8.000
   haproxy:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/release-name: haproxy
+    apiVersion: v1
+    appVersion: 1.5.1
+    created: "2021-04-13T23:45:40.966157742Z"
+    description: A Helm chart for HAProxy Kubernetes Ingress Controller
+    digest: 29aa101f4851cac5b94d2de40c961d0f24c90bb361c0bf1bc17d3244ddf92046
+    home: https://github.com/haproxytech/helm-charts/tree/master/kubernetes-ingress
+    icon: http://www.haproxy.org/img/HAProxyCommunityEdition_60px.png
+    keywords:
+    - ingress
+    - haproxy
+    kubeVersion: '>=1.12.0-0'
+    maintainers:
+    - email: mmhedhbi@haproxy.com
+      name: Moemen Mhedhbi
+    - email: bassmann@haproxy.com
+      name: Baptiste Assmann
+    - email: dkorunic@haproxy.com
+      name: Dinko Korunic
+    name: haproxy
+    sources:
+    - https://github.com/haproxytech/kubernetes-ingress
+    urls:
+    - assets/haproxy/haproxy-1.12.100.tgz
+    version: 1.12.100
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/release-name: haproxy
@@ -550,4 +683,4 @@ entries:
     urls:
     - assets/sysdig/sysdig-1.9.200.tgz
     version: 1.9.200
-generated: "2021-02-25T22:46:37.810270792Z"
+generated: "2021-04-13T23:59:35.408531094Z"
